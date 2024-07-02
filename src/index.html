@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link type="image/png" sizes="50x50" rel="icon" href="../assets/favicon/mic-100.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+  </head>
+
+  <body class="bg-secondary h-screen">
+    <!-- navbar -->
+    <div
+      id="background"
+      class="h-screen bg-[url('../assets/podcast.svg')] bg-auto-70 bg-bottom sm:bg-cover bg-no-repeat sm:bg-center flex flex-col"
+    >
+      <!-- Your content here -->
+
+      <nav class="flex-none p-3 flex justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+          <img
+            src="../assets/logo.png"
+            class="object-cover max-w-12 max-h-12"
+            alt="logo"
+          />
+        </a>
+        <div id="nav-menu" class="hidden md:flex gap-12">
+          <a href="#" class="font-medium text-onPrimary hover:text-primary"
+            >Home</a
+          >
+          <a href="#" class="font-medium text-onPrimary hover:text-primary"
+            >Episodes</a
+          >
+          <a href="#" class="font-medium text-onPrimary hover:text-primary"
+            >Blog</a
+          >
+          <a href="#" class="font-medium text-onPrimary hover:text-primary"
+            >About Us</a
+          >
+        </div>
+
+        <button class="hidden md:block bg-primary p-3 rounded-xl">
+          Sign Up
+        </button>
+
+        <button class="p2 md:hidden" onclick="handleMenu()">
+          <span class="material-symbols-outlined menu text-primary">
+            menu
+          </span>
+        </button>
+
+        <div
+          id="nav-dialog"
+          class="fixed bg-secondary hidden md:hidden inset-0 p-3 flex flex-col"
+        >
+          <div id="nav-bar" class="flex justify-between flex-none">
+            <a href="#" id="brand" class="flex gap-2 items-center">
+              <img
+                src="../assets/logo.png"
+                class="object-cover max-w-12 max-h-12"
+                alt="logo"
+              />
+            </a>
+            <button class="p2 md:hidden" onclick="handleMenu()">
+              <span class="material-symbols-outlined close text-primary">
+                close
+              </span>
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-12 grow justify-center items-center">
+            <a href="#" class="font-medium text-onPrimary hover:text-primary"
+              >Home</a
+            >
+            <a href="#" class="font-medium text-onPrimary hover:text-primary"
+              >Episodes</a
+            >
+            <a href="#" class="font-medium text-onPrimary hover:text-primary"
+              >Blog</a
+            >
+            <a href="#" class="font-medium text-onPrimary hover:text-primary"
+              >About Us</a
+            >
+            <button class="bg-primary py-3 px-5 rounded-xl">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main content -->
+      <div
+        id="main-container"
+        class="flex flex-col justify-between sm:justify-end py-8 grow gap-12"
+      >
+        <div id="content" class="flex flex-col items-center pt-4 gap-4">
+          <div
+            class="text-3xl sm:text-5xl md:text-6xl text-center font-bold text-onPrimary"
+          >
+            Elevate Your Mind,
+            <br />
+            Transform Your World
+          </div>
+          <button
+            class="bg-primary px-4 py-2 w-fit rounded-xl flex justify-center text-onPrimary items-center"
+          >
+            Latest episode
+            <span class="material-symbols-outlined"> play_arrow </span>
+          </button>
+        </div>
+
+        <div id="footer" class="pb-8">
+          <div class="text-center text-onPrimary pb-2">
+            From great minds that inspire
+          </div>
+
+          <div class="flex justify-center">
+            <img
+              src="../assets/alex.svg"
+              alt="Alex"
+              class="border-2 border-primary rounded-full"
+            />
+            <img
+              src="../assets/cbum.svg"
+              alt="Cbum"
+              class="border-2 border-primary rounded-full -ml-2"
+            />
+            <img
+              src="../assets/goggins.svg"
+              alt="Goggins"
+              class="border-2 border-primary rounded-full -ml-2"
+            />
+            <img
+              src="../assets/andrew.svg"
+              alt="Andrew"
+              class="border-2 border-primary rounded-full -ml-2"
+            />
+            <img
+              src="../assets/pbd.svg"
+              alt="Pbd"
+              class="border-2 border-primary rounded-full -ml-2"
+            />
+            <img
+              src="../assets/jordan-peterson.svg"
+              alt="Jordan Peterson"
+              class="border-2 border-primary rounded-full -ml-2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
